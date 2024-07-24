@@ -195,10 +195,101 @@ while True:
         mouse.press("right")
     if request[0]==89:
         mouse.press("middle")
-    if request[0]==90:                gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
-    if request[0]==90:     gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_B)
-    if request[0]==91:        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_X)
-    if request[0]==92:        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_Y)
+    if request[0]==90:                
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
+    if request[0]==90:     
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_B)
+    if request[0]==91:        
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_X)
+    if request[0]==92:        
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_Y)
+    if request[0]==93:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP)
+    if request[0]==94:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN)
+    if request[0]==95:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
+    if request[0]==96:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT)
+    if request[0]==97:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_START)
+    if request[0]==98:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_BACK)
+    if request[0]==99:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_LEFT_THUMB)
+    if request[0]==100:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_RIGHT_THUMB)
+    if request[0]==101:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_LEFT_SHOULDER)
+    if request[0]==102:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_RIGHT_SHOULDER)
+    if request[0]==103:
+        gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_GUIDE)
+    if request[0]==104:
+        gamepad.left_trigger(value=255)
+        gamepad.send()
+        gamepad.left_trigger(value=0)
+        gamepad.send()
+    if request[0]==105:
+        gamepad.right_trigger(value=255)
+        gamepad.send()
+        gamepad.right_trigger(value=0)
+        gamepad.send()
+    if request[0]==106: 
+        gamepad.left_joystick(x_value=-32768, y_value=0)
+        gamepad.send()
+        gamepad.left_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==107: 
+        gamepad.left_joystick(x_value=32767, y_value=0)
+        gamepad.send()
+        gamepad.left_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==108: 
+        gamepad.left_joystick(x_value=0, y_value=-32768)
+        gamepad.send()
+        gamepad.left_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==109: 
+        gamepad.left_joystick(x_value=0, y_value=32767)
+        gamepad.send()
+        gamepad.left_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==110: 
+        gamepad.left_joystick(x_value=32768, y_value=32767)
+        gamepad.send()
+        gamepad.left_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==111: 
+        gamepad.left_joystick(x_value=-32768, y_value=-32768)
+        gamepad.send()
+        gamepad.left_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==112: 
+        gamepad.right_joystick(x_value=-32768, y_value=0)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==113: 
+        gamepad.right_joystick(x_value=32767, y_value=0)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==114: 
+        gamepad.right_joystick(x_value=0, y_value=-32768)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==115: 
+        gamepad.right_joystick(x_value=32768, y_value=32767)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==116: 
+        gamepad.right_joystick(x_value=-32768, y_value=-32768)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
     
     print(str(request[0]))
         
