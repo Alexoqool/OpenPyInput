@@ -281,12 +281,22 @@ while True:
         gamepad.right_joystick(x_value=0, y_value=0)  
         gamepad.send()
     if request[0]==115: 
-        gamepad.right_joystick(x_value=32768, y_value=32767)
+        gamepad.right_joystick(x_value=-32768, y_value=32767)
         gamepad.send()
         gamepad.right_joystick(x_value=0, y_value=0)  
         gamepad.send()
     if request[0]==116: 
+        gamepad.right_joystick(x_value=32767, y_value=32767)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==117: 
         gamepad.right_joystick(x_value=-32768, y_value=-32768)
+        gamepad.send()
+        gamepad.right_joystick(x_value=0, y_value=0)  
+        gamepad.send()
+    if request[0]==118: 
+        gamepad.right_joystick(x_value=32767, y_value=-32768)
         gamepad.send()
         gamepad.right_joystick(x_value=0, y_value=0)  
         gamepad.send()
